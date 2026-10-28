@@ -1,0 +1,45 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title> Automated Weather App </title>
+    </head>
+        <body>
+
+        <h1> Baron Dela Fuente, 2nd Year - BSIT </h1>
+        <canvas id = "bisaya" width = "300" height = "300" style = "background-color:  #e0f7fa; border: 2px solid #00acc1;">
+        </canvas>
+
+        <script>
+            const canvas = document.getElementById('bisaya');
+            const ctx = canvas.getContext('2d');
+    
+
+    // Draw the green sun
+    ctx.fillStyle = 'green';
+    ctx.beginPath();
+    ctx.arc(150, 150, 40, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Draw the sun rays
+    ctx.strokeStyle = 'green';
+    ctx.lineWidth = 4;
+
+    for (let i = 0; i < 12; i++) {
+        let angle = (i * Math.PI) / 6;
+
+        let x1 = 150 + Math.cos(angle) * 50;
+        let y1 = 150 + Math.sin(angle) * 50;
+
+        let x2 = 150 + Math.cos(angle) * 70;
+        let y2 = 150 + Math.sin(angle) * 70;
+
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+    }
+
+    </script>
+    </body>
+    </html>

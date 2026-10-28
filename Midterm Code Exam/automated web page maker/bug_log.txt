@@ -1,0 +1,26 @@
+Automated Web Maker
+
+File Name: app.js
+Line #: 16
+Error: Cannot output the code
+Fix: Input 'create_page' to output the code
+
+File Name: app.js
+Line #: 7
+Error: Emitter.addListenerEvent
+Fix: Replaced it as on instead
+
+File: htmlProvider.js
+Line #: 14
+Error: export default
+Fix: Replaced with module.exports =
+
+File Name: app.js
+Line #: 90
+Error: index.html 
+Fix: Replaced it into Activity2.html then turn it back to index.html
+
+File Name: app.js
+Line #: 92
+Error: index.html
+Fix: Replaced it into Activity2.html then turn it back to index.html

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Midterm Exam Code</title>
+    </head>
+    <body>
+        <h1>Baron Dela Fuente, 2nd Year - BSIT</h1>
+
+        <canvas id = "bigger" width="400" height="400"
+        style = "border:1px solid #000"></canvas>
+        <script>
+    const canvas = document.getElementById("bigger");
+    const fill = canvas.getContext("2d");
+    const Scale = 5;
+
+function draw (x, y, w, h, color) {
+    fill.fillStyle = color;
+    fill.fillRect (x * Scale, y * Scale, w * Scale, h * Scale);
+}
+
+// Hood
+draw(20, 6, 12, 2, "#1a1a1a");
+draw(18, 8, 16, 2, "#111111");
+draw(16, 10, 20, 8, "#123328");
+
+// Hood shadow
+draw(18, 18, 16, 2, "#0b1f1a");
+
+// Face glow
+draw(22, 12, 8, 4, "#00ff99");
+
+// Eyes
+draw(23, 13, 2, 1, "#ffffff");
+draw(27, 13, 2, 1, "#ffffff");
+
+// Mouth glow
+draw(24, 15, 4, 1, "#ccffee");
+
+// Body cloak
+draw(18, 20, 16, 18, "#145c46");
+draw(16, 30, 20, 8, "#0f2e24");
+
+// Shoulder armor
+draw(14, 20, 4, 4, "#1a1a1a");
+draw(34, 20, 4, 4, "#1a1a1a");
+
+// Arms
+draw(12, 22, 6, 4, "#145c46");
+draw(34, 22, 6, 4, "#145c46");
+
+// Lantern chain
+draw(40, 20, 1, 10, "#888888");
+
+// Lantern outer glow
+draw(37, 29, 8, 8, "#66ffcc");
+
+// Lantern body
+draw(38, 30, 6, 6, "#ccffcc");
+
+// Lantern center
+draw(40, 32, 2, 2, "#ffffff");
+
+// Cloak bottom
+draw(14, 38, 24, 6, "#0b1f1a");
+
+// Legs
+draw(20, 44, 4, 8, "#0b1f1a");
+draw(28, 44, 4, 8, "#0b1f1a");
+
+// Feet glow
+draw(19, 52, 5, 2, "#1affaa");
+draw(28, 52, 5, 2, "#1affaa");
+
+// Scythe handle
+draw(8, 10, 2, 20, "#5c4033");
+
+// Scythe blade
+draw(4, 8, 8, 2, "#00ffcc");
+draw(2, 10, 4, 2, "#ccffee");
+draw(1, 12, 3, 2, "#00ffcc");
+
+// Ghost aura
+draw(12, 12, 1, 24, "rgba(0,255,153,0.3)");
+draw(38, 12, 1, 24, "rgba(0,255,153,0.3)");
+
+    </script>
+    </body>
+    </html>

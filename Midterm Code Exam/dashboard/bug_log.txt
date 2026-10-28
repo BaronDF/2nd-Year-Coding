@@ -1,0 +1,28 @@
+Live Server Monitor
+
+File Name:dashboardHelper.js
+Line #: 2
+Error: html
+Fix: html must be capitalized
+
+File Name:dashboardHelper.js
+Line #: 15
+Error: 2d in written in between of getContext
+Fix: Remove the 2D then put it inside of the parenthesis
+
+File Name: app.js
+Line #: 10
+Error: setInterval wrong placement of value
+Fix : Set the value at the end of the function
+
+
+File Name: app.js
+Line #: 17
+Error: clearTimeout
+Fix : Replaced with clearInterval
+
+
+File Name: app.js
+Line #: 25
+Error: after fs.readFileSync() must include .toString()
+Fix : Include .toString()
